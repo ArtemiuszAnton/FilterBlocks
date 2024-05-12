@@ -7,25 +7,16 @@ body {
     background: #F7F7F8;
 }
 
-.wrapper {
+.info {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     margin: 0 auto;
     width: 773px;
+    gap: 10px;
+    padding: 24px;
 
-    .form {
-        display: flex;
-        gap: 5px;
-        justify-content: space-between;
-
-        input {
-            width: 100em;
-            background-color: #fff;
-        }
-    }
-
-    .item {
+    .item,
+    .description {
         display: flex;
         flex-direction: column;
         max-width: 773px;
@@ -35,7 +26,6 @@ body {
 
 
         h2 {
-            color: #5E96FC;
             font: 600 20px Inter;
             font-size: 20px;
             font-weight: 600;
@@ -56,21 +46,20 @@ body {
                 font: 400 16px Inter;
             }
         }
-    }
 
-    .location {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
 
-        .geo {
-            background-image: url('./assets/Location.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 17px;
-            width: 13px;
+            .geo {
+                background-image: url('../Vacancy/assets/Location.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 17px;
+                width: 13px;
+            }
         }
     }
-
 
 }
